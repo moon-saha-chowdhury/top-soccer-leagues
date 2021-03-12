@@ -17,7 +17,7 @@ const League = (props) => {
     return (
         <div>
             <div className="card h-100 shadow rounded m-3">
-            <img class="bg-light mt-3 w-50" src={leagueCard.strBadge} class="card-img-top card-image ml-auto mr-auto" alt="league"/>
+            <img className="bg-light mt-3 w-50 card-img-top card-image ml-auto mr-auto" src={leagueCard.strBadge} alt="league"/>
 
                         <div className="card-body ml-auto mr-auto">
                             <h4 className="card-title text-highlight">{strLeague}</h4>
