@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { Link, useHistory } from 'react-router-dom';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { Link} from 'react-router-dom';
 
 const League = (props) => {
     const{strLeague,strSport, idLeague} = props.league;
