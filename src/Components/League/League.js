@@ -5,19 +5,19 @@ import { Link} from 'react-router-dom';
 
 const League = (props) => {
     const{strLeague,strSport, idLeague} = props.league;
-    const [leagueCard, setLeaguecard] = useState([])
+    const [leagueCard, setLeagueCard] = useState([])
     useEffect(()=>{
         const url =`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`;
         fetch(url)
         .then(res => res.json())
-        .then(data => setLeaguecard(data.leagues[0]))
+        .then(data => setLeagueCard(data.leagues[0]))
 
     },[idLeague])
    
     return (
         <div>
             <div className="card h-100 shadow rounded m-3">
-            <img class="bg-light mt-3 w-50" src={leagueCard.strBadge} class="card-img-top card-image ml-auto mr-auto" alt="league image"/>
+            <img class="bg-light mt-3 w-50" src={leagueCard.strBadge} class="card-img-top card-image ml-auto mr-auto" alt="league"/>
 
                         <div className="card-body ml-auto mr-auto">
                             <h4 className="card-title text-highlight">{strLeague}</h4>
