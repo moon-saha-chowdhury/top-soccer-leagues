@@ -1,0 +1,40 @@
+.home-container{
+    height: 400px;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+h1{
+    padding-top: 95px;
+    color: white;
+    background-color: rgba(179, 16, 16, 0.404);
+}
+.card-container{
+    padding-top: 250px;
+}
+.card-bg{
+    background-color: rgba(128, 128, 128, 0.205);
+
+}
+
+.league-badge{
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+
+}
+.league-details{
+  background-color:#524848;
+  color:white;
+  border-radius: 5px;
+
+}
+.card-image{
+    height: 250px;
+    width: 300px;
+    padding: 45px;
+}
+.gender-image{
+    width: 60%;
+}
